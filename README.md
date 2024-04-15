@@ -11,22 +11,6 @@ The bias-variance trade-off is a key concept in machine learning and statistics.
 
 Finding the right balance between bias and variance is essential for building models that are both accurate and robust.
 
-$$
-\begin{split}
-E_{y^{*}, x^{*}}E_{P}{(y^{*}-h(x^{*}))}^{2}
-&= E_{y^{*}, x^{*}} E_{P}\left[(h(x^{*})-\overline{h(x^{*})})^{2}\right] \\
-&\quad + E_{y^{*}, x^{*}}\left[(\overline{h(x^{*})}-f(x^{*}))^{2}\right] + \sigma^{2}\\ 
-&= Variance + Bias^{2} + Noise
-\end{split}
-$$
-
-in it,
-
-$$Variance = E_{y^{*}, x^{*}} E_{P}\left[(h(x^{*})-\overline{h(x^{*})})^{2}\right]$$
-
-$$Bias^2 = E_{y^{*}, x^{*}}\left[(\overline{h(x^{*})}-f(x^{*}))^{2}\right]$$
-
-
 ## Simulation Process
 
 The simulation involves generating synthetic data with a known underlying trend, then adding noise to simulate real-world data. Linear regression models of increasing complexity are fit to this data, and their performance is evaluated based on their ability to predict the true underlying trend.
